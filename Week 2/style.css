@@ -154,3 +154,19 @@ footer h2 {
 footer p {
     margin: 0.5em 0;
 }
+
+@media screen and (max-width:600px) {
+    .navbar, .product-gallery, .product-detail{
+        flex-direction: column;
+    }
+
+    .product-card{
+        width: 80%;
+    }
+    .back-link{
+        font-size: 16px;
+    }
+    .product-info{
+        margin-left: 1.8em;
+    }
+}
