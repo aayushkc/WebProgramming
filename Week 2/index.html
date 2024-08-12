@@ -1,70 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Fashion Store</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    
     </header>
-    <main id="home">
+    <main id="home" class="container mt-4">
         <section id="products">
-            <h2>Our Products</h2>
-            <div class="product-gallery">
-                <div class="product-card">
-                    <a href="product1.html"><img  src="product1.jfif" alt="Product 1"></a>
-                    <div class="product-info">
-                        <p>Product 1</p>
-                        <p>Price: $49.99</p>
-                        <p>Available Sizes: S, M, L</p>
+            <h2 class="text-center">Our Products</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <a href="product1.html"><img src="product1.jfif" class="card-img-top" alt="Product 1"></a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">Price: $49.99</p>
+                            <p class="card-text">Available Sizes: S, M, L</p>
+                            <a href="product1.html" class="btn btn-custom mt-2">View Details</a>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card">
-                    <a href="product2.html"><img  src="product2.jfif" alt="Product 2"></a>
-                    <div class="product-info">
-                        <p>Product 2</p>
-                        <p>Price: $59.99</p>
-                        <p>Available Sizes: M, L, XL</p>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <a href="product2.html"><img src="product2.jfif" class="card-img-top" alt="Product 2"></a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Product 2</h5>
+                            <p class="card-text">Price: $59.99</p>
+                            <p class="card-text">Available Sizes: M, L, XL</p>
+                            <a href="product2.html" class="btn btn-custom mt-2">View Details</a>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card">
-                    <a href="product3.html"><img  src="product3.jpg" alt="Product 3"></a>
-                    <div class="product-info">
-                        <p>Product 3</p>
-                        <p>Price: $39.99</p>
-                        <p>Available Sizes: S, M</p>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <a href="product3.html"><img src="product3.jpg" class="card-img-top" alt="Product 3"></a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Product 3</h5>
+                            <p class="card-text">Price: $39.99</p>
+                            <p class="card-text">Available Sizes: S, M</p>
+                            <a href="product3.html" class="btn btn-custom mt-2">View Details</a>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card">
-                    <a href="product4.html"><img  src="product4.webp" alt="Product 4"></a>
-                    <div class="product-info">
-                        <p>Product 4</p>
-                        <p>Price: $69.99</p>
-                        <p>Available Sizes: L, XL</p>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <a href="product4.html"><img src="product4.webp" class="card-img-top" alt="Product 4"></a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Product 4</h5>
+                            <p class="card-text">Price: $69.99</p>
+                            <p class="card-text">Available Sizes: L, XL</p>
+                            <a href="product4.html" class="btn btn-custom mt-2">View Details</a>
+                        </div>
                     </div>
                 </div>
-               
             </div>
         </section>
     </main>
 
-    <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: info@fashionstore.com</p>
-            <p>Phone: 123-456-7890</p>
-        </section>
+    <footer class="py-4">
+        <div class="container text-center">
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:info@fashionstore.com">info@fashionstore.com</a></p>
+                <p>Phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+            </section>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
